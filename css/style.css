@@ -1,0 +1,421 @@
+@charset "UTF-8";
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+html {
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1250px;
+  max-width: 100%;
+  margin: auto;
+}
+
+.button {
+  min-width: 245px;
+  max-width: 100%;
+  padding: 20px;
+  background-color: #0b0b0b;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 1rem;
+  border: none;
+}
+.button:hover {
+  cursor: pointer;
+  background-color: #252525;
+}
+
+.titleH2 {
+  color: #000000;
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  line-height: 1;
+}
+
+main {
+  overflow: hidden;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header {
+  position: relative;
+  width: 100%;
+  min-height: 1050px;
+  padding: 0 20px;
+  background: url(../img/promo/Butterfly1.png) no-repeat 580px 300px, url(../img/promo/Butterfly.png) no-repeat 20px 350px, url(../img/promo/Image.png) no-repeat 210% 100px, url(../img/promo/Hills.png) no-repeat -100px -180px;
+}
+.header__top {
+  padding: 35px 0;
+}
+.header__logo {
+  width: 200px;
+  max-width: 100%;
+  height: 60px;
+}
+.header__logo img {
+  width: 100%;
+}
+.header__nav {
+  width: 760px;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.header__nav a {
+  color: #000000;
+  font-weight: 700;
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  position: relative;
+}
+.header__nav a:before {
+  content: "";
+  position: absolute;
+  top: -165%;
+  left: -30%;
+  width: 60px;
+  height: 40px;
+  background: url(../img/Touch/Butterfly11.png) no-repeat center;
+  background-size: 100%;
+  transform: scale(0);
+  transition: all 0.5s;
+}
+.header__nav a:hover:before {
+  top: -15px;
+  left: -40px;
+  transform: scale(1);
+}
+.header__title {
+  padding-top: 200px;
+  width: 950px;
+  max-width: 100%;
+}
+.header__title h4 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: #0b0b0b;
+}
+.header__title h1 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  color: #0b0b0b;
+  font-weight: 800;
+}
+.header__title-text {
+  width: 600px;
+  max-width: 100%;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 30px 0;
+  text-transform: uppercase;
+}
+.header .fa-bars {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+  display: none;
+  z-index: 100;
+}
+
+.TheBest {
+  width: 100%;
+  min-height: 550px;
+  padding-left: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+.TheBest__text {
+  width: 500px;
+  max-width: 100%;
+  margin-right: 35px;
+  margin-top: -150px;
+}
+.TheBest__text h4 {
+  text-transform: uppercase;
+  color: #a2a2a2;
+  font-size: 2rem;
+}
+.TheBest__text_discr {
+  margin-top: 40px;
+  color: #3d3d3d;
+  font-size: 1.2rem;
+}
+.TheBest__slider-items {
+  width: 800px;
+  padding-top: 50px;
+}
+.TheBest__slider-item {
+  margin-right: 30px;
+  box-shadow: 10px 10px 15px #a7a3a3;
+}
+.TheBest__slider-item img {
+  width: 100%;
+}
+
+.Organisation {
+  width: 100%;
+  min-height: 350px;
+  background: url(../img/Largest/CHicken-Image.jpg) no-repeat center;
+  padding: 90px 20px;
+}
+.Organisation h2, .Organisation__subtitle {
+  color: #ffffff;
+}
+.Organisation h2 {
+  text-align: center;
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.Organisation__subtitle {
+  width: 830px;
+  max-width: 100%;
+  margin: auto;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.Touch {
+  width: 100%;
+  padding: 70px 20px 100px 20px;
+}
+.Touch__wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.Touch__img {
+  width: 545px;
+  max-width: 100%;
+  position: relative;
+}
+.Touch__img img {
+  width: 100%;
+}
+.Touch__img::before {
+  content: "";
+  width: 70px;
+  height: 45px;
+  position: absolute;
+  top: 50px;
+  left: 61px;
+  background: url(../img/Touch/Butterfly2.png) no-repeat center;
+  background-size: cover;
+}
+.Touch__img::after {
+  content: "";
+  width: 90px;
+  height: 45px;
+  position: absolute;
+  top: 227px;
+  right: -51px;
+  background: url(../img/Touch/Butterfly11.png) no-repeat center;
+  background-size: cover;
+  transform: rotateY(180deg);
+}
+.Touch__text {
+  width: 580px;
+  max-width: 100%;
+  padding-top: 60px;
+}
+.Touch__discr {
+  margin: 50px 0 30px 0;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.footer {
+  width: 100%;
+  padding-bottom: 50px;
+}
+.footer__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.footer__CallNow {
+  width: 220px;
+}
+.footer__CallNow span {
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 700;
+  background-color: #000000;
+  font-size: 1.2rem;
+}
+.footer__CallNow a {
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 700;
+  background-color: #000000;
+  font-size: 2rem;
+}
+.footer__copy {
+  width: 450px;
+}
+.footer__social {
+  width: 155px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__social a {
+  width: 30px;
+  height: 30px;
+  background-color: #000;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__social a .fa {
+  color: #fff;
+  font-size: 20px;
+}
+.footer__fon {
+  background: #f3f3f3;
+  padding: 50px;
+}
+
+.block-subscription {
+  position: fixed;
+  top: 50%;
+  right: -100%;
+  transform: translateY(-50%);
+  width: 50%;
+  background-color: #fdf0e7;
+  padding: 30px;
+  transition: 1.5s cubic-bezier(0.48, 1.28, 1, -0.04);
+  box-shadow: 0 0 30px #ccc;
+}
+.block-subscription form {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.block-subscription form input {
+  width: 49%;
+  padding-left: 10px;
+  font-size: 1.2rem;
+}
+.block-subscription form input:not([type=submit]) {
+  height: 60px;
+  border: none;
+}
+.block-subscription h4 {
+  font-size: 1.5rem;
+}
+.block-subscription__social {
+  width: 155px;
+  display: flex;
+  justify-content: space-between;
+}
+.block-subscription__social a {
+  width: 30px;
+  height: 30px;
+  background-color: #000;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.block-subscription__social a .fa {
+  color: #fff;
+  font-size: 20px;
+}
+.block-subscription__social a:hover {
+  text-decoration: none;
+}
+.block-subscription span {
+  position: absolute;
+  top: -21px;
+  left: 1px;
+  font-size: 50px;
+  cursor: pointer;
+}
+.block-subscription:before {
+  content: "";
+  position: absolute;
+  top: -200%;
+  left: -100%;
+  width: 100px;
+  height: 100px;
+  background: url(../img/Touch/Butterfly11.png) no-repeat center;
+  background-size: 100%;
+  transform: rotate(42deg);
+  opacity: 0;
+}
+.block-subscription_activ {
+  right: 0;
+}
+.block-subscription_activ.block-subscription:before {
+  top: -31%;
+  left: -9%;
+  opacity: 1;
+  transition: all 0.7s 2s;
+}
+
+.mobileMenu {
+  position: fixed;
+  top: -100%;
+  left: -100%;
+  width: 600px;
+  max-width: 100%;
+  height: 550px;
+  display: flex;
+  background: #ffffff url(../img/promo/Hills.png) no-repeat center;
+  border-radius: 50% 82% 67% 76%;
+  box-shadow: 0 0 20px #ccc;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s cubic-bezier(1, 1.95, 0.92, 0.97);
+}
+.mobileMenu__nav {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  overflow: auto;
+}
+.mobileMenu__nav a {
+  color: #000000;
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  position: relative;
+  margin-bottom: 30px;
+}
+.mobileMenu span {
+  position: absolute;
+  top: 50px;
+  left: 150px;
+  font-size: 50px;
+}
+.mobileMenu_activ {
+  top: -55px;
+  left: -60px;
+}
+.mobileMenu_activ .mobileMenu__nav {
+  opacity: 1;
+  transition: 0.5s 0.5s;
+}
+
+/*для больших экранов*/
+/*Medium Для средних экранов*/
+/*Smal для маленьких экранов*/
+/*Exstra Smal для супер маленьких экранов*/
+/*Для Iphon*/
