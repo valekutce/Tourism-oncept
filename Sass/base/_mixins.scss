@@ -1,0 +1,21 @@
+@mixin button {
+    min-width: 245px;
+    max-width: 100%;
+    padding: 20px;
+    background-color: $colorBut;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1rem;
+    border: none;
+    &:hover{
+        cursor: pointer;
+        background-color: lighten($color: $colorBut, $amount:10%);
+    }
+}
+@mixin titleH2 {
+    color: #000000;
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    line-height: 1;
+}

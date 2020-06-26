@@ -1,0 +1,405 @@
+@import "base/variables";
+@import "base/mixins";
+
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+html{
+    font-size: 16px;
+    box-sizing: border-box;
+}
+.container{
+    width: 1250px;
+    max-width: 100%;
+    margin: auto;
+}
+
+.button{
+    @include button;
+}
+.titleH2{
+    @include titleH2;
+}
+main{
+    overflow: hidden;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header{
+    position: relative;
+    width: 100%;
+    min-height: 1050px;
+    padding: 0 20px;
+    background: 
+    url(../img/promo/Butterfly1.png) no-repeat 580px 300px,
+    url(../img/promo/Butterfly.png) no-repeat 20px 350px,
+    url(../img/promo/Image.png) no-repeat 210% 100px,
+    url(../img/promo/Hills.png) no-repeat -100px -180px;
+    &__top{
+        padding: 35px 0;
+    }
+    &__logo{
+        width: 200px;
+        max-width: 100%;
+        height: 60px;
+        img{
+            width: 100%;
+        }
+    }
+    &__nav{
+        width: 760px;
+        max-width: 100%;
+        display: flex;
+        justify-content: space-between;
+        a{
+            color: #000000;
+            font-weight: 700;
+            font-size: 1rem;
+            text-transform: uppercase;
+            text-decoration: none;
+            position: relative;
+            &:before{
+                content: "";
+                position: absolute;
+                top: -165%;
+                left: -30%;
+                width: 60px;
+                height: 40px;
+                background: url(../img/Touch/Butterfly11.png) no-repeat center;
+                background-size: 100%;
+                // opacity: 0;
+                transform: scale(0);
+                transition: all .5s;
+            }
+            &:hover:before{
+                top: -15px;
+                left: -40px;
+                // opacity: 1;
+                transform: scale(1); 
+            }
+        }
+    }
+    &__title{
+        padding-top: 200px;
+        width: 950px;
+        max-width: 100%;
+        h4{
+            text-transform: uppercase;
+            font-size: 2rem;
+            color: $colorBut;
+        }
+        h1{
+            text-transform: uppercase;
+            font-size: 3rem;
+            color: $colorBut;
+            font-weight: 800;
+        }
+        &-text{
+            width: 600px;
+            max-width: 100%;
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin: 30px 0;
+            text-transform: uppercase;
+        }
+    }
+    .fa-bars{
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        font-size: 30px;
+        display: none;
+        z-index: 100;
+    }
+}
+
+.TheBest{
+    width: 100%;
+    min-height: 550px;
+    padding-left: 60px;
+    display: flex;
+    justify-content: space-between;
+    &__text{
+        width: 500px;
+        max-width: 100%;
+        margin-right: 35px;
+        margin-top: -150px;
+        h4{
+            text-transform: uppercase;
+            color: #a2a2a2;
+            font-size: 2rem;
+        }
+    }
+    &__text_discr{
+        margin-top: 40px;
+        color: #3d3d3d;
+        font-size: 1.2rem;
+    }
+    &__slider-items{
+        width: 800px;
+        padding-top: 50px;
+    }
+    &__slider-item{
+        margin-right: 30px;
+        box-shadow: 10px 10px 15px rgb(167, 163, 163);
+        img{
+            width: 100%;
+        }
+    }
+}
+
+.Organisation{
+    width: 100%;
+    min-height: 350px;
+    background: url(../img/Largest/CHicken-Image.jpg) no-repeat center;
+    padding: 90px 20px;
+    h2,&__subtitle{
+        color: #ffffff;
+    }
+    h2{
+        text-align: center;
+        font-size: 3rem;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+    }
+    &__subtitle{
+        width: 830px;
+        max-width: 100%;
+        margin: auto;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+}
+.Touch{
+    width: 100%;
+    padding: 70px 20px 100px 20px;
+    &__wrap{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__img{
+        width: 545px;
+        max-width: 100%;
+        position: relative;
+        img{
+            width: 100%;
+        }
+        &::before{
+            content: "";
+            width: 70px;
+            height: 45px;
+            position: absolute;
+            top: 50px;
+            left: 61px;
+            background: url(../img/Touch/Butterfly2.png) no-repeat center;
+            background-size: cover;
+        }
+        &::after{
+            content: "";
+            width: 90px;
+            height: 45px;
+            position: absolute;
+            top: 227px;
+            right: -51px;
+            background: url(../img/Touch/Butterfly11.png) no-repeat center;
+            background-size: cover;
+            transform: rotateY(180deg);
+        }
+    }
+    &__text{
+        width: 580px;
+        max-width: 100%;
+        padding-top: 60px;
+    }
+    &__discr{
+        margin: 50px 0 30px 0;
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+}
+
+.footer{
+    width: 100%;
+    padding-bottom: 50px;
+    &__row{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+    }
+    &__CallNow{
+        width: 220px;
+        span{
+            text-transform: uppercase;
+            color: #fff;
+            font-weight: 700;
+            background-color: #000000;
+            font-size: 1.2rem;
+        }
+        a{
+            text-transform: uppercase;
+            color: #fff;
+            font-weight: 700;
+            background-color: #000000;
+            font-size: 2rem; 
+        }
+    }
+    &__copy{
+        width: 450px;
+    }
+    &__social{
+        width: 155px;
+        display: flex;
+        justify-content: space-between;
+        a{
+            width: 30px;
+            height: 30px;
+            background-color: #000;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .fa{
+                color: #fff;
+                font-size: 20px;
+            }
+        }
+    }
+    &__fon{
+        background: #f3f3f3;
+        padding: 50px;
+    }
+}
+
+// Блок подпска на сайте
+.block-subscription{
+    position: fixed;
+    top: 50%;
+    right: -100%;
+    transform: translateY(-50%); 
+    width: 50%;
+    background-color:#fdf0e7;
+    padding: 30px;
+    transition: 1.5s cubic-bezier(.48,1.28,1,-0.04);
+    box-shadow: 0 0 30px #ccc;
+    form{
+        width: 100%;
+        margin-bottom: 20px;
+        input{
+            width: 49%;
+            padding-left: 10px;
+            font-size: 1.2rem;
+        }
+        input:not([type="submit"]){
+            height: 60px;
+            border: none;
+        }
+    }
+    h4{
+        font-size: 1.5rem;
+    }
+    &__social{
+        width: 155px;
+        display: flex;
+        justify-content: space-between;
+        a{
+            width: 30px;
+            height: 30px;
+            background-color: #000;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .fa{
+                color: #fff;
+                font-size: 20px;
+            }
+            &:hover{
+                text-decoration: none;
+            }
+        }
+    }
+    span{
+        position: absolute;
+        top: -21px;
+        left: 1px;
+        font-size: 50px;
+        cursor: pointer;
+    }
+    &:before{
+        content: "";
+        position: absolute;
+        top: -200%;
+        left: -100%;
+        width: 100px;
+        height: 100px;
+        background: url(../img/Touch/Butterfly11.png) no-repeat center;
+        background-size: 100%;
+        transform: rotate(42deg);
+        opacity: 0;
+    }
+    &_activ{
+        right: 0;
+    }
+    &_activ.block-subscription:before{
+        top: -31%;
+        left: -9%;
+        opacity: 1;
+        transition: all .7s 2s;
+    }
+}
+
+// Мобилтное меню
+.mobileMenu{
+    position: fixed;
+    top: -100%;
+    left: -100%;
+    width: 600px;
+    max-width: 100%;
+    height: 550px; 
+    display: flex;
+    background: #ffffff url(../img/promo/Hills.png) no-repeat center;
+    border-radius: 50% 82% 67% 76%;
+    box-shadow: 0 0 20px #ccc;
+    justify-content: center;
+    align-items: center;
+    transition: .4s cubic-bezier(1,1.95,.92,.97);
+    &__nav{
+        width: 90%; 
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        overflow: auto;
+        a{
+            color: #000000;
+            font-weight: 700;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            text-decoration: none;
+            position: relative;
+            margin-bottom: 30px;
+        }
+    }
+    span{
+        position: absolute;
+        top: 50px;
+        left: 150px;
+        font-size: 50px;
+    }
+    &_activ{
+        top: -55px;
+        left: -60px;
+    }
+    &_activ .mobileMenu__nav{
+        opacity: 1;
+        transition: .5s .5s;
+    }
+}
+
+@import "base/media";
